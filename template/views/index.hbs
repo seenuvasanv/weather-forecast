@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/weather.png">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather!</p>
+        <form onsubmit="onSearch(event)">
+            <input type="text" name="search" id="city"  placeholder="Enter city name to find weather condition">
+            <input type="submit" value="Submit">
+        </form>
+        <p id="loader"></p>
+        <p id="forecast"></p>
+        <p id="address"></p>
+        <p id="location"></p>
+        <p id="error"></p>
+    </div>
+    {{>footer}}
+    <script src="/js/main.js"></script>
+</body>
+</html>
