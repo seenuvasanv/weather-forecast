@@ -7,12 +7,6 @@ const locationEl = document.getElementById('location')
 const errorEl = document.getElementById('error')
 const loaderEl = document.getElementById('loader')
 
-fetch('http://puzzle.mead.io/puzzle').then(response => {
-    return response.json()
-}).then(response => {
-    console.log(response)
-})
-
 const fetchWeatherDetails = city => {
     loaderEl.innerHTML = 'Loading...'
     errorEl.innerHTML = ''

@@ -15,10 +15,6 @@
     "dev": "nodemon src/app",
     "run-all": "nodemon src/app -e js,hbs,css"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://eysbp.visualstudio.com/PATS/_git/RiskPlatform-API"
-  },
   "author": "",
   "license": "ISC"
 }
